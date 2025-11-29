@@ -59,3 +59,17 @@ public class Main {
 }
 
  */
+
+
+
+//USING STREAM
+/*
+public static boolean isPalindrome(String s) {
+    return s.equals(
+        s.chars()
+         .mapToObj(c -> (char)c)
+         .reduce("", (a, b) -> b + a, (a, b) -> b + a)
+    );
+}
+
+ */
