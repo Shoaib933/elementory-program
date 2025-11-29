@@ -1,3 +1,4 @@
+//https://www.youtube.com/watch?v=69jsFIMINpI&list=PLUcsbZa0qzu3yNzzAxgvSgRobdUUJvz7p&index=5
 public class FinfTrailingZeroinFact {
     static void main() {
         int n = 30;  //30 fact
