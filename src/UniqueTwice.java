@@ -28,3 +28,26 @@ public static void main(String[] args) {
 //    System.out.println(UniqueTwice.finduniqueHashMap(arr));
     System.out.println(UniqueTwice.finduniqueXor(arr));
 }
+/*
+getOrDefault() is a Map interface method (introduced in Java 8) used to safely retrieve a value for a key.
+If the key is not present, it returns a default value instead of null.
+
+------------------------------
+Why use getOrDefault()?
+
+Avoids NullPointerException
+
+Removes the need for containsKey() checks
+
+Makes code cleaner and more readable
+ */
+
+/*
+int value;
+if (map.containsKey("orange")) {
+    value = map.get("orange");
+} else {
+    value = 0;
+}
+
+ */
