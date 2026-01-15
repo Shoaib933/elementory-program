@@ -1,6 +1,28 @@
 package lovebabbar.arrays;
 
 import java.util.HashSet;
+//best Approach
+/*
+void main() {
+    int[] arr = new int[]{1,5,3,4,3,5,6};
+     HashMap<Integer, Integer> hm = new LinkedHashMap<>();
+
+    for (int i = 0; i < arr.length; i++) {
+        hm.put(arr[i], hm.getOrDefault(arr[i], 0) + 1);
+    }
+    for (Map.Entry<Integer, Integer> entry: hm.entrySet()){
+        if (entry.getValue() > 1){
+            IO.println(entry.getKey());
+            break;
+        }
+    }
+
+}
+ */
+
+
+
+
 
 public class FirstRepeatElemArray {
 
@@ -48,6 +70,3 @@ public class FirstRepeatElemArray {
         System.out.println("First Elem : "+firstElem);
     }
 }
-
-
-
