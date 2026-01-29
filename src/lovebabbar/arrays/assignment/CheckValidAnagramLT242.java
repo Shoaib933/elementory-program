@@ -19,9 +19,30 @@ public class CheckValidAnagramLT242 {
         boolean checkNamgramMethod1 = isAnagram(s, t);
         boolean checkNamgramMethod2 = isAnagram2(s, t);
         boolean checkNamgramMethod3 = isAnagram3(s, t);
+        boolean checkNamgramMethod4 = isAnagram4(s, t);
         IO.println("Method_1 : "+checkNamgramMethod1);
         IO.println("Method_2 : "+checkNamgramMethod2);
         IO.println("Method_3 : "+checkNamgramMethod3);
+        IO.println("Method_4 : "+checkNamgramMethod4);
+    }
+
+    private static boolean isAnagram4(String s, String t) {
+        int[] count = new int[26];
+        if (s.length() != t.length())
+            return false;
+        for (int i = 0; i < s.length(); i++) {
+            int index1 = s.charAt(i) - 97;
+            count[index1] = count[index1] +1;
+
+            int index2 = t.charAt(i) - 97;
+            count[index2] = count[index2] -1;
+
+        }
+        for (int val : count) {
+            if (val!=0)
+                return false;
+        }
+        return true;
     }
 
     private static boolean isAnagram(String s, String t) {
